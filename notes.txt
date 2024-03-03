@@ -1,0 +1,117 @@
+1) time complexity 
+2) space complexity
+
+
+x=10
+
+int k=10
+int k1=10
+int k2=10
+
+20 byte * 100000 -> 20,00,000 byte 
+    -> 2000 MB
+    -> 2 GB 
+
+----------------------------------------------------
+
+		DS
+Linear 			NonLinear
+Array 			Tree
+Stack 			Graph 
+Queue 
+LinkedList
+ 
+	Sort :-b,s,i,m,q,heap  
+	Search:-linear,binary 
+
+
+
+
+
+array : sum 
+
+SIZE = 50 -> 25 
+100 -> 50 
+
+n/2 
+ 
+ O(n/2)
+
+
+ O(1) : constant 
+
+
+
+
+
+search 
+
+1...50 
+
+25 
+
+
+
+login facebook -> 
+    
+------------------------------------------------------------------------------    
+
+array -> n number items 
+		 static 
+		 
+int a[5]; //4*5=>20
+
+DMA 
+
+10 -> 
+3->2 
+
+
+0:2000 2001 2002 2003
+1:2004
+2:2008
+3:2012
+4:2016 
+----------------------------------------------------
+
+function 
+
+void add(){
+	scanf -> console
+	printf(10); 
+}
+
+add(); // call 
+
+
+int add(){
+
+	return 10; 
+}
+
+ans = add(); 
+
+
+int add(int x,int y){
+	return x+y; 
+}
+
+add(10,20);
+-----------------------------------------------------
+
+
+STACK -> LiFo -> Last In First Out 
+
+ticket -> 
+
+ctrl+z -> stack 
+
+
+  
+
+display 
+40
+30
+30
+10
+
