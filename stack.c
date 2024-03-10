@@ -34,14 +34,24 @@ void display(){
     }
 }
 
+void peep(int location){
+    int index;
+    index = top - location + 1 ;
+    if(index >= 0 && index < SIZE){
+        printf("\n %d",stack[index]);
+    }else{
+        printf("\nInvalid Location");
+    }
+}
 
 int main(){
     //23 
     int choice; 
     int num;
+    int location; 
 
     while(-1){ //1 true 0 false 
-        printf("\n0 For Exit\n1 For PUSH\n2 For POP\n3 For Display\nEnter your choice");
+        printf("\n0 For Exit\n1 For PUSH\n2 For POP\n3 For Display\n4 For Peep\nEnter your choice");
         scanf("%d",&choice); 
 
         switch (choice)
@@ -58,6 +68,11 @@ int main(){
             break;
         case 2+1:
             display();
+            break;
+        case 2*2:
+            printf("\nEnter the location");
+            scanf("%d",&location);
+            peep(location);
             break;
         default:
             printf("INVALID CHOICE PTA");

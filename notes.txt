@@ -115,3 +115,21 @@ display
 30
 10
 
+
+----------------------------------------
+take a string from user and reverse it. [ stack ]
+
+
+o/p
+	enter string 
+	royal 
+	reverse: layor 
+
+
+o/p
+	enter string 
+	sir 
+	reverse: ris 
+------------------------------------------	
+
+
