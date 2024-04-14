@@ -133,4 +133,32 @@ o/p
 ------------------------------------------	
 
 searching :- 
+	1) linear search 
+	2) binary search 
+
+h.w -> time complexity of binary search 
+------------------------------------------
+
+sorting -> 
+
+	bubble sort -> 
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
