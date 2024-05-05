@@ -1,11 +1,7 @@
 #include<stdio.h>
 #define SIZE 5 
 
-
-int a[SIZE]; 
-
-
-void getData(){
+void getData(int a[]){
     int i ;
     for(i=0;i<SIZE;i++){
         printf("\nEnter value");
@@ -13,7 +9,7 @@ void getData(){
     }
 }   
 
-void display(){
+void display(int a[]){
     int i ;
     printf("\n");
     for(i=0;i<SIZE;i++){
@@ -21,7 +17,7 @@ void display(){
     }
 }
 
-void insertionSort(){
+void insertionSort(int a[]){
     int i,j,tmp;
 
     for(i=1;i<SIZE;i++){
@@ -39,10 +35,12 @@ void insertionSort(){
 
 int main(){
 
-    getData();//scan array 
-    display();//print array -- unsorted 
-    insertionSort();//sort 
-    display(); //print array -- sorted 
+    int a[SIZE]; 
+
+    getData(a);//scan array 
+    display(a);//print array -- unsorted 
+    insertionSort(a);//sort 
+    display(a); //print array -- sorted 
 
     return 0; 
 }

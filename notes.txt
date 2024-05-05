@@ -142,7 +142,11 @@ h.w -> time complexity of binary search
 sorting -> 
 
 	bubble sort -> 
+	selection sort ->
+	insertion sort -> 
+	merge sort 1 -> 
 
+------------------------------------------------------------------
 			
 
 
