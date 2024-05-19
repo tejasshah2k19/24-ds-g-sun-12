@@ -4,11 +4,7 @@
 #define S2 5
 #define S3 S1 + S2
 
-int a[] = {10, 20, 30, 40, 50};
-int b[] = {5, 7, 11, 25, 32};
-int c[S3];
-
-void mergeSort()
+void mergeSort(int a[],int b[],int c[])
 {
     int i = 0, j = 0, k = 0;
 
@@ -24,16 +20,17 @@ void mergeSort()
         }
     }
 
-    while(i<S1){
-        c[k++]=a[i++];
+    while (i < S1)
+    {
+        c[k++] = a[i++];
     }
-    while(j<S2){
-        c[k++]=b[j++];   
+    while (j < S2)
+    {
+        c[k++] = b[j++];
     }
-
 }
 
-void display()
+void display(int c[])
 {
     int i;
     for (i = 0; i < S3; i++)
@@ -44,7 +41,10 @@ void display()
 
 int main()
 {
-    mergeSort();
-    display();
+    int a[] = {10, 20, 30, 40, 50};
+    int b[] = {5, 7, 11, 25, 32};
+    int c[S3];
+    mergeSort(a,b,c);
+    display(c);
     return 0;
 }
