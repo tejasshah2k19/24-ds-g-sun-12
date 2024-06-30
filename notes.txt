@@ -149,7 +149,85 @@ sorting ->
 ------------------------------------------------------------------
 			
 
-void add
+STACK :: QUEUE 
+
+3456 
+0121223 
+010101b 
+
+0xAA
+0X123 
+
+
+hexaValidtor -> 
+
+0x  0-9 A-F  
+0X
+valid 
+
+Enter the String : 
+0xAAA
+Valid 
+
+ 
+Enter the String : 
+0xAAAW
+InValid 
+
+
+Enter the String : 
+0x
+InValid 
+
+Enter the String : 
+0x0
+Valid 
+
+Enter the String : 
+0xAAA343432323BCDFA12123
+Valid 
+
+Enter the String : 
+royal
+InValid 
+
+
+-----------------------------------------------------------
+
+5 numbers -> 
+array -> 
+
+empName 
+department 
+basicSalary 
+allowance:1500[+]
+hra:7%[+] 
+tax:10%[-] 
+salary 
+
+7*50=350 
+
+
+struct {
+
+};
+
+
+
+
+struct  employee{
+
+};
+
+
+
+
+
+
+
+
+
+
 
 
 

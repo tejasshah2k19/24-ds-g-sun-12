@@ -5,7 +5,7 @@
 
 int queue[S];
 int f = -1;
-int r = -1;
+int r = -1;//empty 
 
 void enqueu(int data)
 {
