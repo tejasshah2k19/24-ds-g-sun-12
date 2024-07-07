@@ -219,6 +219,75 @@ struct  employee{
 
 };
 
+------------------------------------------
+dma 
+
+calloc()
+malloc() 
+
+we can allocate memory 
+
+free() 
+
+
+c++ 
+new  and delete 
+----------------------------------------------------------------------
+
+struct student{
+
+	char name[20];
+	char course[20];
+	char batch[20];
+};
+
+
+struct student s[50]; 
+
+
+5 student -> 45*
+
+60 student -> 10* 
+
+--------------------------------------------------------------------------
+calloc 
+malloc 
+
+stdlib.h 
+
+int a; // 4 byte, malloc 
+
+int a[10] ;//4 byte * 10 , calloc
+
+???
+
+
+pointer 
+
+int *a; //single variable 
+int *p;//array 
+
+a  = malloc(sizeof(int)); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
