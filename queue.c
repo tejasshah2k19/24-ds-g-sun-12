@@ -50,6 +50,8 @@ void display()
             printf(" %d", queue[i]);
         }
     }
+    //500 
+    //4byte * 5 lac => 
 }
 
 void count(){

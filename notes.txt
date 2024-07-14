@@ -270,6 +270,77 @@ int *p;//array
 a  = malloc(sizeof(int)); 
 
 
+dMA ->array 
+print and scan 
+sum of all elements 
+sorting -> bubble
+print 
+
+
+dma->structure 
+
+
+
+DMA 
+int a[];
+
+class 
+
+new => 
+
+
+
+--------------------------------------------------------------------------
+
+DMA -> 
+	calloc 
+	malloc 
+
+
+	int a[4]; //4 elements 4 byte => 16 byte -> memory allocated 
+
+	//0 1 => 2 elements => 2 X 
+
+	//0 1 2 3 4 5 6 => overflow 
+
+	//a[3] -> 3 use => 
+
+	//50 line code 
+
+
+
+stdlib.h 
+	1) calloc : 5byte 50 block  {250byte,slice50}
+	2) malloc : 1 lblock -> size {250byte} 
+	3) realloc 
+	4) free 
+
+
+
+int x; 
+
+
+int *x;//malloc  
+
+
+int *x;//array ->calloc
+
+-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
