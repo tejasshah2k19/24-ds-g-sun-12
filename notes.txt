@@ -328,13 +328,48 @@ int *x;//array ->calloc
 -------------------------------------------------------------------------
 
 
+int main(){
+
+	int ans;
+	ans = printf("123");//how many characters print by printf 
+
+	printf("%d",ans);//2 0 3  
+
+	return 0; 
+}
 
 
+---------------------------------------------------------------------------------
+amazon product -> 
+
+struct { 
+poductId 
+name 
+category 
+price 
+qty 
+discountPercentage 
+rating [1 2 3 4 5 ]
+	union {
+		kids: 0  1  0
+		adult:0  0  0
+		young:1  0  1
+		senior:0 0  0  
+	}
+}
 
 
+Max : 10 : array of structure 
 
+struct : 
 
+0.  Exit 
+1. 	Add Product 
+2.	List Product 
+3.	Search Product By Name {linear}
+4.  Search Product By ID   {binary:sorted}
 
+------------------------------------------------------------------
 
 
 
