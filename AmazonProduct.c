@@ -17,16 +17,20 @@ struct product
 
 int main()
 {
-    int choice; 
+    int choice;
+    int j;
+    char pname[30];
+    int productId;  
 
-    struct product p[]={
-       {1,"iphone 13","phone",120000,100,10,5},
-       {2,"legion y 520","lpatop",25000,12,12,3},
-       {3,"Red Gear A15","mouse",750,120,5,5}
+    struct product tmp;
+    struct product p[] = {
+        {100, "iphone 13", "phone", 120000, 100, 10, 5},
+        {21, "legion y 520", "lpatop", 25000, 12, 12, 3},
+        {3, "Red Gear A15", "mouse", 750, 120, 5, 5}
 
     };
- 
-    int totalProducts=3;
+
+    int totalProducts = 3;
     int i;
     while (-1)
     {
@@ -69,7 +73,41 @@ int main()
             {
                 printf("\n%-10d %-15s %-10s %-10d %-5d %-18d %-3d", p[i].productId, p[i].name, p[i].category, p[i].price, p[i].qty, p[i].discountPercentage, p[i].rating);
             }
+        case 3:
+            printf("\nEnter Product Name");
+            gets(pname);
 
+            // list
+            printf("\nProductId  Name          Category      Price      Qty  DiscountPercentage  Rating");
+            for (i = 0; i < totalProducts; i++)
+            {
+                if (stricmp(p[i].name, pname) == 0)
+                {
+                    printf("\n%-10d %-15s %-10s %-10d %-5d %-18d %-3d", p[i].productId, p[i].name, p[i].category, p[i].price, p[i].qty, p[i].discountPercentage, p[i].rating);
+                }
+            }
+            break;
+        case 4:
+            // sort
+            for (i = 0; i < totalProducts; i++)
+            {
+                for (j = 0; j < totalProducts - 1; j++)
+                {
+                    if (p[j].productId > p[j + 1].productId)
+                    {
+                        tmp = p[j];
+                        p[j] = p[j + 1];
+                        p[j + 1] = tmp;
+                    }
+                }
+            }
+            // id
+            printf("\nEnter Product Id");
+            scanf("%d",&productId);
+            // binarySearch -> id
+            
+
+            break;
         default:
             break;
         }
@@ -77,8 +115,6 @@ int main()
     return 0;
 }
 
-
-
-//vivo      12
-//s3        12   
+// vivo      12
+// s3        12
 //
