@@ -42,7 +42,25 @@ void shiftByOne()
         playerB[i] = playerB[i + 1];
     }
 }
+void display()
+{
+    // playerA
+    // playerB
+    int i;
+    // PlayerA[]={12,56,98,54}
+    printf("\nPlayerA : ");
+    for (i = 0; i < SIZE; i++)
+    {
 
+        printf(" %d", playerA[i]);
+    }
+    // PlayerB[]={34,78,98,90}
+    printf("\nPlayerB : ");
+    for (i = 0; i < SIZE; i++)
+    {
+        printf(" %d", playerB[i]);
+    }
+}
 int isEmpty()
 {
     // if both the player has zero card -> 3
@@ -69,35 +87,52 @@ int isEmpty()
 }
 void battle(int count)
 {
-    int battle[SIZE];
+    int battle[SIZE], i;
+    int x = 0;
     printf("\nBattle : %d", count);
     battle[0] = playerA[0]; // 12
     battle[1] = playerB[0]; // 34
 
     shiftByOne();
-
+    printf("\nGame Start  : ");
+    display();
     // winner
+    // 12 34
+    // B
+    if (battle[0] > battle[1])
+    {
+        // A is Winner : battle
+        // a
+        printf("\nA Win the Battle");
+        for (i = 0; i < SIZE && battle[x] != 0; i++)
+        {
+            if (playerA[i] == 0)
+            {
+                playerA[i] = battle[x];
+                x++;
+            }
+        }
+    }
+    else
+    {
+        // B is winner : battle
+        
+        printf("\nB Win the Battle");
+        for (i = 0; i < SIZE && battle[x] != 0; i++)
+        {
+            if (playerB[i] == 0)
+            {
+                playerB[i] = battle[x];
+                x++;
+            }
+        }
+    }
+
+    printf("\nAfter Battle Finish :");
+     display();
 }
 
-void display()
-{
-    // playerA
-    // playerB
-    int i;
-    // PlayerA[]={12,56,98,54}
-    printf("\nPlayerA : ");
-    for (i = 0; i < SIZE; i++)
-    {
 
-        printf(" %d", playerA[i]);
-    }
-    // PlayerB[]={34,78,98,90}
-    printf("\nPlayerB : ");
-    for (i = 0; i < SIZE; i++)
-    {
-        printf(" %d", playerB[i]);
-    }
-}
 
 int main()
 {
@@ -106,10 +141,10 @@ int main()
     distribute();
     display();
 
-    for (i = 1; i <= 50; i++)
+    for (i = 1; i <=50; i++)
     {
         battle(i);
-        display();
+       
         gameStatus = isEmpty();
         if (gameStatus == 0)
         {
@@ -119,10 +154,14 @@ int main()
         {
             printf("\nPlayerB is the Game Winner");
             break;
-        }else if(gameStatus == 2){
+        }
+        else if (gameStatus == 2)
+        {
             printf("\nPlayerA is the Game Winner");
             break;
-        }else{
+        }
+        else
+        {
             printf("\nGame TIE");
             break;
         }
