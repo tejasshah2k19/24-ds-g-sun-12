@@ -426,8 +426,21 @@ PlayerB[]={12,34,56,78,98,98,54,90}
 --------------------------------------------------------------------
 
 
+STACK QU A : static , perdefine 
 
+int stack[5]; //4 * 5 => 20 byte 
 
+//2 elements -> 3 
+// 8 elements -> overflow 
+
+LinkedList -> dynamic list 
+
+item -> allocate -> when you want you will allocate 
+item -> no need -> immediately release 
+
+----------------------------------------------------------------------
+
+node -> data 
 
 
 
