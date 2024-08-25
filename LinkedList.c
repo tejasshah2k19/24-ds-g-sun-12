@@ -7,7 +7,7 @@ struct node
     struct node *next;
 } *head = NULL, *last = NULL;
 
-void addNode(int num)
+void addNode(int num)//10 20 30 
 {
     struct node *tmp;
 
@@ -47,11 +47,27 @@ void addNodeBeg(int num)
 void deleteAtEnd()
 {
     struct node *p;
-
+    if(head == NULL){
+        printf("\nList is Empty");
+        return; 
+    }
     for (p = head; p->next != last; p = p->next);
+
     p->next = NULL;     
     free(last);
     last  = p;
+}
+
+
+void deleteBeg(){
+    struct node *p; 
+    if(head == NULL){
+        printf("\nList is Empty");
+    }else{
+        p = head; 
+        head = head->next ; 
+        free(p); 
+    }
 }
 void display()
 {
@@ -60,6 +76,20 @@ void display()
     for (i = head; i != NULL; i = i->next)
     {
         printf(" %d", i->data);
+    }
+}
+
+void search(int key){
+    struct node *i;
+    for (i = head; i != NULL; i = i->next)
+    {
+        if(i->data == key){
+            printf("\n%d found",key);
+            break; 
+        }
+    }
+    if(i==NULL){
+        printf("\n%d not found ",key);
     }
 }
 
@@ -101,6 +131,9 @@ int main()
         case 7:
             display();
             break;
+        case 5:
+            deleteBeg();
+            break; 
         case 0:
             exit(0);
         }
