@@ -446,7 +446,12 @@ node -> data
 
 
 
+40	30	20	10
+head 
 
+1)insertBeg 
+2)deleteAtBeg 
+3)display 
 
 
 

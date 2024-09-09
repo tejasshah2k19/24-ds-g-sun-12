@@ -220,7 +220,9 @@ int main()
             addAny(source, num);
             break;
         case 6:
-            deleteAny();
+            printf("\nEnter source");
+            scanf("%d", &source);
+            deleteAny(source);
             break;
         case 0:
             exit(0);
